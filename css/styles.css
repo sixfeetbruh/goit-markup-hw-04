@@ -199,6 +199,10 @@ button {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)) ,url(../images/background-image-hero.jpg);
     background-size: cover;
     max-width: 1600px;
+    height: 600px;
+    margin: 0 auto;
+    background-position: center;
+
 }
 
 .hero-title {
@@ -311,7 +315,7 @@ button {
 }
 
 .social-list-icon {
-    fill: var(--fill-social-icon);
+    fill: currentColor;
 }
 
 .social-list {
@@ -328,6 +332,7 @@ button {
     width: 44px;
     height: 44px;
     border-radius: 50%;
+    color: var(--fill-social-icon);
 }
 
 .social-list-link:hover,
@@ -336,10 +341,6 @@ button {
     color: var(--primary-bgc-color);
 }
 
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
-    fill: currentColor
-}
 .client-list {
     display: flex;
     justify-content: center;
@@ -355,21 +356,17 @@ button {
     width: 170px;
     height: 92px;
     border-radius: 4px;
+    color: var(--fill-social-icon);
 }
 
 .client-icon {
-    fill: var(--fill-social-icon);
+    fill: currentColor;
 }
 
 .client-link:hover,
 .client-link:focus {
     color: var(--accent-color);
     border-color: var(--accent-color);
-}
-
-.client-link:hover .client-icon,
-.client-link:focus .client-icon {
-    fill: currentColor;
 }
 
 /* =============== STUDIO BUTTON SECTION =============== */
@@ -516,7 +513,11 @@ button {
     height: 44px;
     border-radius: 50%;
     background-color: var(--footer-elipse-color) ;
-    fill: var(--primary-bgc-color);
+    color: var(--primary-bgc-color);
+}
+
+.footer-contact-icon {
+    fill: currentColor;
 }
 
 .footer-contact-link:hover,
@@ -524,14 +525,17 @@ button {
     background-color: var(--accent-color);
 }
 
-.flex-footer {
+.footer-flex {
     display: flex;
     align-items: baseline;
-    column-gap: 70px;
+}
+
+.footer-logo {
+    margin-right: 70px;
 }
 
 .title-social-link {
-    font-size: 14px;
+    font-weight: 700;
     line-height: 0.87;
     margin-bottom: 20px;
 }
